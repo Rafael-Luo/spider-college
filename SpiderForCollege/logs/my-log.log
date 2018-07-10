@@ -2,3 +2,276 @@
 [2018-07-09 21:21:45,380][MainThread:7804][task_id:root][DBUtil.py:30][ERROR][测试error]
 [2018-07-09 21:31:34,083][MainThread:9836][task_id:root][DBUtil.py:29][INFO][成功连接！！！]
 [2018-07-09 21:31:34,083][MainThread:9836][task_id:root][DBUtil.py:30][ERROR][测试error]
+[2018-07-10 11:49:32,766][MainThread:2016][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 11:49:32,768][MainThread:2016][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 11:49:32,779][MainThread:2016][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 11:49:32,824][MainThread:2016][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 11:49:33,185][MainThread:2016][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 11:49:33,191][MainThread:2016][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 11:49:33,194][MainThread:2016][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 11:49:33,196][MainThread:2016][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 11:49:33,208][MainThread:2016][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 11:49:33,211][MainThread:2016][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 11:49:33,222][MainThread:2016][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 11:49:33,223][MainThread:2016][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 3, 49, 33, 223307),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 3, 49, 33, 208381)}]
+[2018-07-10 11:49:33,224][MainThread:2016][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:00:34,080][MainThread:2204][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:00:34,081][MainThread:2204][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:00:34,085][MainThread:2204][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:00:34,137][MainThread:2204][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:00:34,480][MainThread:2204][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:00:34,485][MainThread:2204][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:00:34,488][MainThread:2204][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:00:34,489][MainThread:2204][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:00:34,501][MainThread:2204][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:00:34,503][MainThread:2204][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:00:34,515][MainThread:2204][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:00:34,516][MainThread:2204][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 0, 34, 516208),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 0, 34, 501251)}]
+[2018-07-10 12:00:34,517][MainThread:2204][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:02:12,812][MainThread:26172][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:02:12,815][MainThread:26172][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:02:12,819][MainThread:26172][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:02:12,863][MainThread:26172][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:02:13,194][MainThread:26172][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:02:13,201][MainThread:26172][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:02:13,203][MainThread:26172][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:02:13,204][MainThread:26172][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:02:13,213][MainThread:26172][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:02:13,216][MainThread:26172][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:02:13,227][MainThread:26172][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:02:13,228][MainThread:26172][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 2, 13, 228870),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 2, 13, 213941)}]
+[2018-07-10 12:02:13,229][MainThread:26172][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:03:26,750][MainThread:16572][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:03:26,751][MainThread:16572][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:03:26,758][MainThread:16572][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:03:26,804][MainThread:16572][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:03:27,138][MainThread:16572][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:03:27,143][MainThread:16572][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:03:27,146][MainThread:16572][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:03:27,147][MainThread:16572][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:03:27,160][MainThread:16572][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:03:27,163][MainThread:16572][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:03:27,176][MainThread:16572][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:03:27,177][MainThread:16572][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 3, 27, 177345),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 3, 27, 160393)}]
+[2018-07-10 12:03:27,178][MainThread:16572][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:04:36,150][MainThread:19556][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:04:36,150][MainThread:19556][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:04:36,154][MainThread:19556][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:04:36,199][MainThread:19556][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:04:36,536][MainThread:19556][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:04:36,544][MainThread:19556][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:04:36,546][MainThread:19556][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:04:36,547][MainThread:19556][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:04:36,559][MainThread:19556][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:04:36,563][MainThread:19556][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:04:36,570][MainThread:19556][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:04:36,572][MainThread:19556][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 4, 36, 571853),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 4, 36, 559884)}]
+[2018-07-10 12:04:36,573][MainThread:19556][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:08:49,718][MainThread:7156][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:08:49,719][MainThread:7156][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:08:49,725][MainThread:7156][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:08:49,769][MainThread:7156][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:08:50,103][MainThread:7156][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:08:50,110][MainThread:7156][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:08:50,112][MainThread:7156][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:08:50,113][MainThread:7156][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:08:50,124][MainThread:7156][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:08:50,126][MainThread:7156][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:08:50,134][MainThread:7156][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:08:50,135][MainThread:7156][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 8, 50, 135157),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 8, 50, 124220)}]
+[2018-07-10 12:08:50,136][MainThread:7156][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
+[2018-07-10 12:09:28,703][MainThread:25164][task_id:scrapy.utils.log][log.py:146][INFO][Scrapy 1.5.0 started (bot: SpiderForCollege)]
+[2018-07-10 12:09:28,705][MainThread:25164][task_id:scrapy.utils.log][log.py:149][INFO][Versions: lxml 4.2.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.4.0, Python 3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Windows-10-10.0.17134-SP0]
+[2018-07-10 12:09:28,709][MainThread:25164][task_id:scrapy.crawler][crawler.py:38][INFO][Overridden settings: {'BOT_NAME': 'SpiderForCollege', 'NEWSPIDER_MODULE': 'SpiderForCollege.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['SpiderForCollege.spiders']}]
+[2018-07-10 12:09:28,755][MainThread:25164][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']]
+[2018-07-10 12:09:29,091][MainThread:25164][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']]
+[2018-07-10 12:09:29,096][MainThread:25164][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']]
+[2018-07-10 12:09:29,099][MainThread:25164][task_id:scrapy.middleware][middleware.py:53][INFO][Enabled item pipelines:
+['SpiderForCollege.pipelines.SpiderforcollegePipeline']]
+[2018-07-10 12:09:29,100][MainThread:25164][task_id:scrapy.core.engine][engine.py:256][INFO][Spider opened]
+[2018-07-10 12:09:29,110][MainThread:25164][task_id:scrapy.extensions.logstats][logstats.py:48][INFO][Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)]
+[2018-07-10 12:09:29,112][MainThread:25164][task_id:scrapy.extensions.telnet][telnet.py:60][DEBUG][Telnet console listening on 127.0.0.1:6023]
+[2018-07-10 12:09:29,120][MainThread:25164][task_id:scrapy.core.engine][engine.py:295][INFO][Closing spider (finished)]
+[2018-07-10 12:09:29,120][MainThread:25164][task_id:scrapy.statscollectors][statscollectors.py:47][INFO][Dumping Scrapy stats:
+{'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 7, 10, 4, 9, 29, 120978),
+ 'log_count/DEBUG': 1,
+ 'log_count/INFO': 7,
+ 'start_time': datetime.datetime(2018, 7, 10, 4, 9, 29, 110007)}]
+[2018-07-10 12:09:29,121][MainThread:25164][task_id:scrapy.core.engine][engine.py:326][INFO][Spider closed (finished)]
