@@ -1,3 +1,7 @@
+import MySQLdb
+
+from SpiderForCollege.db.DBUtil import DBUtil
+
 
 class HtmlOutputer(object):
 
@@ -10,7 +14,6 @@ class HtmlOutputer(object):
         self.datas.append(data)
 
     def output_mysql(self):
+        db = DBUtil()
+        db.connect(self.datas)
 
-        #   ascii
-        for data in self.datas:
-           print(len(data))

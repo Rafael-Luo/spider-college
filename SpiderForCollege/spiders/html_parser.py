@@ -1,3 +1,5 @@
+import MySQLdb
+import pymysql
 from bs4 import BeautifulSoup
 
 from SpiderForCollege.bean.College import College
@@ -21,7 +23,7 @@ class HtmlParser(object):
 
     def _get_new_data(self, soup):
         res_data = []
-
+        db = DBUtil()
         college =College()
         # find_all 查到所有dl列表
         for dl in soup.find_all('dl', ):
@@ -35,15 +37,20 @@ class HtmlParser(object):
 
             li = dl.find_all('li')
             try:
-                 college.city = self.split(li[0].text.strip())
-                 college.character = self.split(li[1].text.strip())
-                 college.type = self.split(li[2].text.strip())
-                 college.department = self.split(li[3].text.strip())
-                 college.levels = self.split(li[4].text.strip())
-                 college.url = self.split(li[5].text.strip())
-                 print("学校名称:"+college.name+" 图标:"+college.icon+" 所在地:"+college.city+
+
+                college.city = self.split(li[0].text.strip())
+                college.character = self.split(li[1].text.strip())
+                college.type = self.split(li[2].text.strip())
+                college.department = self.split(li[3].text.strip())
+                college.levels = self.split(li[4].text.strip())
+                college.url = self.split(li[5].text.strip())
+                # collegeOne = (college.name,college.icon,college.city,college.department,college.type,college.levels,college.charact,college.url)
+                # res_data.append(collegeOne)
+
+                print("学校名称:"+college.name+" 图标:"+college.icon+" 所在地:"+college.city+
                        " 性质:"+college.levels+" 特色:"+college.character+" 类型:"+college.type+" 网址:"+college.url)
-                 res_data.append(college)
+
+
             except IndexError as e:
                 pass
 

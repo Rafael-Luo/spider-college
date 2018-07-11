@@ -16,7 +16,7 @@ class DBUtil(object):
         self.password = '123456'
         self.db = "college"
 
-    def insert(self, name,city,department,type,levels,character,score):
+    def connect(self,data):
         try:
 
             self.connect = pymysql.connect(host=self.host,
@@ -25,28 +25,31 @@ class DBUtil(object):
                                            passwd=self.password,
                                            db=self.db,
                                            charset='utf8')
-
-
             logging.info('成功连接！！！')
-            cur = self.connect.cursor()
-
-            sql = "INSERT INTO test(name, \
-                   city, department, type, levels, character, score) \
-                   VALUES ("+name+", "+city+", "+department+", "+type+", "+levels+" ,"+character+", "+score+")"
-
+            self.cursor = self.connect.cursor()
             try:
-                cur.execute(sql)
-                self.connect.commit()
-                print("insert ok")
-            except Exception as e:
-                print(e)
-                self.connect.rollback()
 
-            # self.cursor = self.connect.cursor()  # 获取游标
-        except:
-            print('error in connect to mysql')
-        finally:
+                sql = """INSERT INTO college(name, icon,
+                         city, department, type,levels, charact, url)
+                         VALUES (%s,%s,%s,%s,%s,%s,%s,%s)"""
+
+                # 执行 sql 语句
+                self.cursor.executemany(sql, data)
+                # 提交到数据库执行
+                self.cursor.close()
+                self.connect.commit()
+                print('提交完毕')
+            except:
+                # 如果发生错误则进行回滚
+                self.connect.rollback()
+                print('\n Some Error happend ! \n')
+            # 关闭数据库连接
             self.connect.close()
+
+        except:
+            logging.error('连接失败！！！')
+
+
 
 
 
