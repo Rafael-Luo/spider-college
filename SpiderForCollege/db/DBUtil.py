@@ -14,10 +14,11 @@ class DBUtil(object):
         self.port = 3306
         self.user = 'root'
         self.password = '123456'
-        self.db = "learner"
+        self.db = "college"
 
-    def connect(self):
+    def insert(self, name,city,department,type,levels,character,score):
         try:
+
             self.connect = pymysql.connect(host=self.host,
                                            port=self.port,
                                            user=self.user,
@@ -27,12 +28,25 @@ class DBUtil(object):
 
 
             logging.info('成功连接！！！')
-            logging.error('测试error')
+            cur = self.connect.cursor()
+
+            sql = "INSERT INTO test(name, \
+                   city, department, type, levels, character, score) \
+                   VALUES ("+name+", "+city+", "+department+", "+type+", "+levels+" ,"+character+", "+score+")"
+
+            try:
+                cur.execute(sql)
+                self.connect.commit()
+                print("insert ok")
+            except Exception as e:
+                print(e)
+                self.connect.rollback()
+
             # self.cursor = self.connect.cursor()  # 获取游标
         except:
             print('error in connect to mysql')
+        finally:
+            self.connect.close()
 
 
-if __name__ == '__main__':
-    dbUtil = DBUtil()
-    dbUtil.connect()
+

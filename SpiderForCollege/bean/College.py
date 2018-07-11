@@ -11,13 +11,16 @@ url:高校官网
 
 class College(object):
 
-    def __init__(self, name='', city='', type='', department='', levels='', url=''):
+    def __init__(self, name='', icon='', city='', type='', department='', levels='', character='', url='', score=''):
         self._name = name
+        self._icon = icon
         self._city = city
         self._type = type
         self._department = department
         self._levels = levels
+        self._character = character
         self._url = url
+        self._score = score
 
     @property
     def name(self):
@@ -26,6 +29,14 @@ class College(object):
     @name.setter
     def name(self, new_name):
         self._name = new_name
+
+    @property
+    def icon(self):
+        return self._icon
+
+    @icon.setter
+    def icon(self, new_cion):
+        self._icon = new_cion
 
     @property
     def city(self):
@@ -60,6 +71,14 @@ class College(object):
         self._levels = new_levels
 
     @property
+    def character(self):
+        return self._character
+
+    @character.setter
+    def character(self, new_character):
+        self._character = new_character
+
+    @property
     def url(self):
         return self._url
 
@@ -67,10 +86,29 @@ class College(object):
     def url(self, new_url):
         self._url = new_url
 
+    @property
+    def score(self):
+        return self._score
+
+    @score.setter
+    def score(self, new_score):
+        self._score = new_score
+
+
+    def toString(self):
+        # (college.name, college.city, college.type, college.department, college.levels, college.character, college.score)
+        return '院校名称:'+college.name+'院校所在地:'+college.city+'院校隶属:'+college.department+'院校类型:'+college.type+'学历层次:'+college.levels+'院校特性:'+college.character+'满意度:'+college.score+''
+
 
 if __name__ == '__main__':
-    college = College
+    college = College()
     college.url = "aaa"
     college.city = 'aaa'
     college.url = 'bbb'
-    print(college.url + college.city)
+    college.character='aaa'
+    college.score='aaa'
+    college.levels='aaa'
+    college.department='aaa'
+    college.name='ds'
+
+    print(college.toString())
