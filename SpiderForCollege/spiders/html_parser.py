@@ -19,8 +19,6 @@ class HtmlParser(object):
         newNum = int(num[1])+1
         new_urls = ' http://college.gaokao.com/schlist/p'+str(newNum)+'/'
         return new_urls
-
-
     def _get_new_data(self, soup):
         res_data = []
         db = DBUtil()
