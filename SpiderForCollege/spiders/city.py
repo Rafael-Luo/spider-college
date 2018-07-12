@@ -5,7 +5,9 @@ from multiprocessing.dummy import Pool
 import requests
 from bs4 import BeautifulSoup
 
-city_list = []
+from SpiderForCollege.db.DBUtil import DBUtil
+
+pro_link = []
 def get_provice(url):
     web_data = requests.get(url, headers=header)
     soup = BeautifulSoup(web_data.content, 'lxml')
@@ -17,9 +19,11 @@ def get_provice(url):
             'href': href,
             'provice': provice
         }
-        city_list.append(href)
-    return city_list
+        #provice_href.insert_one(data)#存入数据库
+        pro_link.append(href)
+# 获取分数线
 def get_score(url):
+
     web_data = requests.get(url, headers=header)
     soup = BeautifulSoup(web_data.content, 'lxml')
     # 获取省份信息
@@ -46,13 +50,17 @@ def get_score(url):
                 elif 'class' in k.attrs:
                     score_line = k.text.strip()
 
-                score_data = {
-                    'provice': provice.strip(),#省份
-                    'category': category_list[index],#文理科分类
-                    'score_line': score_line,#分数线类别
-                    'score_list': score_list#分数列表
-                }
-                print(score_data)
+                score_data = (
+                     provice.strip(),#省份
+                     category_list[index],#文理科分类
+                     score_line,#分数线类别
+                     str(score_list)#分数列表
+                )
+            sql = """INSERT INTO score(city, category,score_line, score_list)
+                                                   VALUES (%s,%s,%s,%s)"""
+            db = DBUtil()
+            db.insert(sql, score_data)
+            #score_detail.insert_one(score_data)#插入数据库
 if __name__ == '__main__':
 
     header = {
@@ -61,6 +69,6 @@ if __name__ == '__main__':
         }
     url = 'http://www.gaokao.com/guangdong/fsx/'
 
-    print(len(get_provice(url)))
+    get_provice(url)
     pool = Pool()
-    pool.map(get_score, [i for i in city_list])#使用多线程
+    pool.map(get_score, [i for i in pro_link])  # 使用多线程

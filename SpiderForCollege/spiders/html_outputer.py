@@ -1,3 +1,5 @@
+import logging
+
 import MySQLdb
 
 from SpiderForCollege.db.DBUtil import DBUtil
@@ -14,6 +16,5 @@ class HtmlOutputer(object):
         self.datas.append(data)
 
     def output_mysql(self):
-        db = DBUtil()
-        db.connect(self.datas)
+        return
 
